@@ -3,16 +3,18 @@
 public class Vertex{
     int x;
     int y;
-    int dist = Integer.MAX_VALUE;
+    int N = 8;
 
-    public Vertex (int x, int y, int dist){
+    public Vertex (int x, int y){
         this.x = x;
         this.y = y;
-        this.dist = dist;
     }
 
-    public int getDist(int dist){
-        return dist;
+    public int getVal(){
+        int positionX = x * N;
+        int positionY = y;
+        int val = positionX + positionY;
+        return val;
     }
 
     @Override
